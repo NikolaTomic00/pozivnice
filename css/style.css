@@ -390,6 +390,7 @@ nav button {
     gap: 1rem;
   }
   .categories__right > * {
+    /* Smes i da se smanjis ispod svoje prirodne sirine*/
     min-width: 0;
   }
   .category {
