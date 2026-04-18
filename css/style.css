@@ -80,6 +80,9 @@ img {
   display: block;
   object-fit: cover;
 }
+#logo {
+  color: var(--primary-color);
+}
 
 .btn {
   display: inline-block;
@@ -163,14 +166,14 @@ nav button {
   width: 100%;
   text-align: center;
 }
+.btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+}
 
 .btn-container {
   display: flex;
   gap: 50px;
-}
-
-.btn:hover {
-  background-color: var(--primary-dark);
 }
 
 .categories {
@@ -200,11 +203,17 @@ nav button {
   background-color: var(--background-primary-color);
   padding: 2rem;
   border-radius: 2rem;
-  transition: var(--transition);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(156, 163, 175, 0.25);
 }
 
 .category:hover {
-  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  border: 1px solid #3b82f6;
+  box-shadow:
+    0 0 8px rgba(59, 130, 246, 0.4),
+    0 0 16px rgba(59, 130, 246, 0.2);
+  cursor: pointer;
+  transform: translateY(-3px);
 }
 
 .category__icon {
