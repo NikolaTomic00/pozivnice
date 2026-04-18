@@ -348,7 +348,7 @@ nav button {
   }
 
   .nav__menu li a {
-    background-color: var(--background-primary-color);
+    background-color: var(--primary-dark);
     box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
@@ -385,16 +385,25 @@ nav button {
     margin-bottom: 1.3rem;
   }
   .categories__right {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolone */
+    gap: 1rem;
+  }
+  .categories__right > * {
+    min-width: 0;
   }
   .category {
     padding: 1rem;
     border-radius: 1rem;
   }
+  .category h4 {
+    font-size: 0.85rem;
+  }
+  .category p {
+    font-size: 0.7rem;
+  }
   .category__icon {
     display: inline-block;
     margin-top: 4px;
   }
-  
 }
