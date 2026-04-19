@@ -150,6 +150,12 @@ nav button {
 .header__left p {
   margin: 1rem 0 2.4rem;
 }
+#simple {
+  color: var(--primary-color);
+}
+#organized {
+  color: var(--primary-color);
+}
 
 .btn {
   background-color: var(--primary-color);
