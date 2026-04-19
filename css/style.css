@@ -374,9 +374,10 @@ nav button {
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-    width: var(--container-witdh-sm);
+  h2 {
+    font-size: 1.3rem;
   }
+
   .nav__menu {
     right: 3%;
   }
@@ -386,7 +387,9 @@ nav button {
   .header__container {
     text-align: center;
     margin-top: 0;
+    width: 100%;
   }
+
   .header__left p {
     margin-bottom: 1.3rem;
   }
