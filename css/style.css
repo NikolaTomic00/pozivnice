@@ -412,6 +412,9 @@ nav button {
   .category p {
     font-size: 0.7rem;
   }
+  .category:nth-child(6) h4 {
+    font-size: 0.8rem;
+  }
   .category__icon {
     display: inline-block;
     margin-top: 4px;
