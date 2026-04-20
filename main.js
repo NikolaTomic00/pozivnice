@@ -20,3 +20,31 @@ closedBtn.addEventListener("click", () => {
   closedBtn.style.display = "none";
   menuBtn.style.display = "inline-block";
 });
+
+const swiper = new Swiper(".testimonial__swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
