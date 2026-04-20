@@ -81,7 +81,10 @@ img {
   object-fit: cover;
 }
 #logo {
-  color: var(--primary-color);
+  background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn {
@@ -151,10 +154,16 @@ nav button {
   margin: 1rem 0 2.4rem;
 }
 #simple {
-  color: var(--primary-color);
+  background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #organized {
-  color: var(--primary-color);
+  background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn {
@@ -275,7 +284,10 @@ nav button {
   text-align: center;
 }
 .description h1 {
-  color: var(--primary-color);
+  background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-bottom: 1.5rem;
 }
 
@@ -531,11 +543,14 @@ nav button {
   .price-info h1 {
     font-size: 2rem;
     padding-bottom: 1rem;
-    color: #a78bfa;
+    background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .wrapper {
-    width: 320px;
+    width: 335px;
     background: var(--background-primary-color);
     border-radius: 16px;
     padding: 30px;
@@ -552,12 +567,12 @@ nav button {
     overflow: hidden;
   }
   header label {
-    height: 100%;
+    height: 80%;
     z-index: 2;
-    width: 30%;
+    width: 100%;
     display: flex;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -569,8 +584,9 @@ nav button {
     color: #fff;
   }
   header label:nth-child(2) {
-    width: 40%;
+    width: 35%;
   }
+
   header .slider {
     position: absolute;
     height: 85%;
@@ -580,17 +596,17 @@ nav button {
   }
   #tab-1:checked ~ header .slider {
     left: 0%;
-    width: 70px;
+    width: 85px;
     transform: translateX(5%);
   }
   #tab-2:checked ~ header .slider {
     left: 50%;
-    width: 120px;
+    width: 90px;
     transform: translateX(-50%);
   }
   #tab-3:checked ~ header .slider {
     left: 100%;
-    width: 80px;
+    width: 90px;
     transform: translateX(-105%);
   }
   .wrapper input[type="radio"] {
@@ -619,6 +635,7 @@ nav button {
     margin-left: -66.8%;
   }
   .row .price-details {
+    color: var(--primary-color);
     margin: 20px 0;
     text-align: center;
     padding-bottom: 1px;
@@ -629,6 +646,10 @@ nav button {
     font-weight: 600;
     position: relative;
     font-family: "Noto Sans", sans-serif;
+    background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .price-details .price::before,
   .price-details .price::after {
@@ -641,6 +662,10 @@ nav button {
     left: -13px;
     top: 17px;
     font-size: 20px;
+    background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .price-details p {
