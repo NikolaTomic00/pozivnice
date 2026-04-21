@@ -284,6 +284,7 @@ nav button {
   align-items: center;
   overflow: visible;
   padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .testimonial__card img {
   width: 120px;
@@ -301,6 +302,9 @@ nav button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 1.5rem;
+}
+.title-description {
+  margin-bottom: 2rem;
 }
 
 .testimonial__swiper {
@@ -701,7 +705,7 @@ nav button {
 
   .price-info {
     text-align: center;
-    padding-bottom: 2rem;
+    padding: 2rem;
   }
   .price-info h1 {
     font-size: 2.7rem;
@@ -710,6 +714,9 @@ nav button {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .price-info p {
+    font-size: 1rem;
   }
 
   .wrapper {
@@ -803,6 +810,9 @@ nav button {
     text-align: center;
     padding-bottom: 1px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .pricing-section {
+    padding-top: 0px;
   }
   .price-details .price {
     font-size: 80px;
