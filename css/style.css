@@ -28,6 +28,8 @@
 
   --border-grey: border: 1px solid rgba(156, 163, 175, 0.25);
   --transition: all 400ms ease;
+
+  --background-gradient: (90deg, #a78bfa 0%, #77a5f8 100%);
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -85,7 +87,7 @@ img {
   object-fit: cover;
 }
 #logo {
-  background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+  background: linear-gradient(90deg, #a78bfa 0%, #77a5f8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -158,20 +160,20 @@ nav button {
   margin: 1rem 0 2.4rem;
 }
 #simple {
-  background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+  background: linear-gradient(90deg, #a78bfa 0%, #77a5f8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #organized {
-  background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+  background: linear-gradient(90deg, #a78bfa 0%, #77a5f8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .btn {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   color: #000;
   border: none;
   border-radius: var(--border-radius);
@@ -194,7 +196,12 @@ nav button {
   display: flex;
   gap: 50px;
 }
-
+.highlight-word {
+  background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .categories {
   background-color: var(--backgrouind-secendory-color);
   padding-top: 3rem;
@@ -486,29 +493,33 @@ nav button {
 .price-info h1 {
   font-size: 4rem;
   padding-bottom: 1rem;
-  background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
+  background: linear-gradient(90deg, #a78bfa 0%, #77a5f8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .currency {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-right: 2px;
-  color: var(--primary-color);
+  background: linear-gradient(90deg, #a78bfa 0%, #77a5f8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   vertical-align: top;
 }
 
 .amount {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 1;
-  color: var(--primary-color);
+  background: linear-gradient(90deg, #a78bfa 0%, #77a5f8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-.period {
-  font-size: 1rem;
-  color: var(--text-gray);
+#plan-status {
+  padding-bottom: 2rem;
 }
 
 .card-body {
