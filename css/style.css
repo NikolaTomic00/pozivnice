@@ -26,7 +26,7 @@
   --shadow-md: 1px solid rgba(255, 255, 255, 0.1);
   --shadow-blue: 1px solid #3b82f6;
 
-  --border-grey: border: 1px solid rgba(156, 163, 175, 0.25);
+  --border-grey: 1px solid rgba(156, 163, 175, 0.25);
   --transition: all 400ms ease;
 
   --background-gradient: (90deg, #a78bfa 0%, #77a5f8 100%);
@@ -114,7 +114,7 @@ nav {
 
 .window-scroll {
   background-color: var(--backgrouind-secendory-color);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-bottom: var(--border-grey);
 }
 
 .nav__container {
@@ -402,13 +402,6 @@ nav button {
   color: white;
 }
 
-/* opcionalno hover efekat */
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  transform: scale(1.1);
-  transition: 0.2s ease;
-}
-/* pagination */
 .swiper-pagination {
   bottom: 40px !important; /* iznad strelica */
 }
@@ -809,7 +802,7 @@ nav button {
     margin: 20px 0;
     text-align: center;
     padding-bottom: 1px;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   .price-details .price {
     font-size: 80px;
