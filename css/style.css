@@ -435,9 +435,10 @@ nav button {
 }
 .pricing-desktop {
   background-color: var(--backgrouind-secendory-color);
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   padding-top: 0;
   border-top: 1px solid rgba(156, 163, 175, 0.25);
+  border-bottom: 1px solid rgba(156, 163, 175, 0.25);
 }
 
 .card {
@@ -574,6 +575,55 @@ nav button {
   border-radius: 20px;
   z-index: 3;
 }
+.pricing-section {
+  padding-top: 0px;
+  padding-bottom: 1rem;
+}
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.show-stats {
+  background-color: var(--b);
+  padding: 0px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+.stat-card {
+  border: none;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.2s ease;
+}
+.stat-value {
+  font-size: 2rem;
+  padding: 0rem;
+}
+
+.stat-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #77a5f8 0%, #a78bfa 100%);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.stat-icon i {
+  font-size: 1.5rem;
+  color: var(--text-light);
+}
+
+.stat-content {
+  flex: 1;
+}
 /* tablets media querier ----------------------------------------------------- */
 
 @media screen and (max-width: 1024px) {
@@ -689,6 +739,9 @@ nav button {
     justify-content: center; /* centriranje horizontalno */
     align-items: center;
     gap: 50px;
+  }
+  .pricing-section {
+    padding-bottom: 0px;
   }
   .pricing-desktop {
     display: none;
@@ -811,9 +864,7 @@ nav button {
     padding-bottom: 1px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  .pricing-section {
-    padding-top: 0px;
-  }
+
   .price-details .price {
     font-size: 80px;
     font-weight: 600;
@@ -942,5 +993,15 @@ nav button {
   }
   .description h1 {
     font-size: 2.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    padding: 0px;
+    gap: 1rem;
+  }
+
+  .stat-value {
+    font-size: 2rem;
   }
 }
