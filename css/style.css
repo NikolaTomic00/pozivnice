@@ -602,6 +602,7 @@ nav button {
 }
 .stat-value {
   font-size: 2rem;
+  font-weight: bold;
   padding: 0rem;
 }
 
@@ -614,6 +615,19 @@ nav button {
   background: linear-gradient(45deg, #77a5f8 0%, #a78bfa 100%);
   border-radius: 12px;
   flex-shrink: 0;
+}
+
+.stat-card:nth-child(1) .stat-icon {
+  background: orange;
+}
+.stat-card:nth-child(2) .stat-icon {
+  background: green;
+}
+.stat-card:nth-child(3) .stat-icon {
+  background: blue;
+}
+.stat-card:nth-child(4) .stat-icon {
+  background: red;
 }
 
 .stat-icon i {
