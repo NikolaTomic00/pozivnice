@@ -580,7 +580,7 @@ nav button {
   padding-bottom: 1rem;
 }
 .stats-container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 .show-stats {
@@ -601,7 +601,7 @@ nav button {
   transition: all 0.2s ease;
 }
 .stat-value {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   padding: 0rem;
 }
@@ -624,10 +624,10 @@ nav button {
   background: green;
 }
 .stat-card:nth-child(3) .stat-icon {
-  background: blue;
+  background: red;
 }
 .stat-card:nth-child(4) .stat-icon {
-  background: red;
+  background: blue;
 }
 
 .stat-icon i {
@@ -636,7 +636,12 @@ nav button {
 }
 
 .stat-content {
-  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 35px;
 }
 /* tablets media querier ----------------------------------------------------- */
 
@@ -1010,12 +1015,29 @@ nav button {
   }
 
   .stats-grid {
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
-    padding: 0px;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
-
   .stat-value {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  .stat-card {
+    padding-bottom: 0px;
+  }
+  .card1 {
+    padding-top: 2.5rem;
+  }
+  .card2 {
+    padding-top: 0px;
+  }
+  .card3 {
+    padding-top: 0px;
+  }
+  .card4 {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+  .stat-content {
+    line-height: 1.7rem;
   }
 }
