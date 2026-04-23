@@ -202,6 +202,19 @@ nav button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.header__right-image img {
+  width: 80%;
+}
+.header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__right-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .categories {
   background-color: var(--backgrouind-secendory-color);
   padding-top: 3rem;
@@ -601,11 +614,13 @@ nav button {
   transition: all 0.2s ease;
 }
 .stat-value {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: bold;
   padding: 0rem;
 }
-
+.stat-label {
+  font-size: 1rem;
+}
 .stat-icon {
   width: 64px;
   height: 64px;
@@ -641,7 +656,7 @@ nav button {
   flex-direction: column;
   font-size: 1rem;
   font-weight: bold;
-  line-height: 35px;
+  line-height: 30px;
 }
 /* tablets media querier ----------------------------------------------------- */
 
@@ -743,7 +758,6 @@ nav button {
 
   .nav__menu li a {
     background-color: var(--primary-dark);
-    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
     display: grid;
@@ -777,18 +791,18 @@ nav button {
 
   .price-info {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem 2rem 2rem;
   }
   .price-info h1 {
     font-size: 2.7rem;
-    padding-bottom: 1rem;
+    padding-bottom: 8px;
     background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .price-info p {
-    font-size: 1rem;
+    font-size: 13px;
   }
 
   .wrapper {
@@ -881,7 +895,7 @@ nav button {
     margin: 20px 0;
     text-align: center;
     padding-bottom: 1px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: var(--border-grey);
   }
 
   .price-details .price {
@@ -964,10 +978,24 @@ nav button {
     text-align: center;
     margin-top: 0;
     width: 100%;
+    padding-bottom: 8%;
+    gap: 1rem;
   }
 
   .header__left p {
     margin-bottom: 1.3rem;
+  }
+  .categories {
+    padding-top: 2rem;
+  }
+  .categories__left {
+    margin-bottom: 0px;
+  }
+  .categories__left h3 {
+    padding-bottom: 8px;
+  }
+  .categories__left p {
+    font-size: 12px;
   }
   .categories__right {
     display: grid;
@@ -995,6 +1023,7 @@ nav button {
     display: inline-block;
     margin-top: 4px;
   }
+
   .swiper {
     width: 75%;
     padding-top: 0;
@@ -1010,20 +1039,25 @@ nav button {
   .testimonial__description {
     font-size: 0.85rem;
   }
-  .description h1 {
-    font-size: 2.5rem;
+  .pricing-list {
+    border-bottom: var(--border-grey);
   }
-
+  .description h1 {
+    font-size: 2rem;
+    padding-bottom: 8px;
+  }
+  .description h2 {
+    font-size: 1.1rem;
+  }
   .stats-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  .stat-value {
-    font-size: 1.5rem;
-  }
+
   .stat-card {
     padding-bottom: 0px;
   }
+
   .card1 {
     padding-top: 2.5rem;
   }
@@ -1038,6 +1072,9 @@ nav button {
     padding-bottom: 1rem;
   }
   .stat-content {
-    line-height: 1.7rem;
+    line-height: 30px;
+  }
+  .stat-value {
+    font-size: 1.8rem;
   }
 }
