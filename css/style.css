@@ -658,6 +658,19 @@ nav button {
   font-weight: bold;
   line-height: 30px;
 }
+.preview {
+  display: flex;
+  flex-direction: column; /* slika pa dugme */
+  justify-content: center; /* vertikalno centriranje */
+  align-items: center; /* horizontalno centriranje */
+  min-height: 100vh; /* 👈 centar ekrana */
+  text-align: center;
+  padding-top: 0px;
+}
+.preview-image img {
+  width: 600px;
+}
+
 /* tablets media querier ----------------------------------------------------- */
 
 @media screen and (max-width: 1024px) {
@@ -1080,5 +1093,23 @@ nav button {
   .stat-label {
     font-size: 1rem;
     font-weight: 400;
+  }
+  .preview-image img {
+    width: 300px;
+  }
+  .preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 0px;
+    min-height: auto;
+    padding-bottom: 2rem;
+  }
+  .btn-models {
+    width: 200px;
+    font-size: 1rem;
   }
 }
