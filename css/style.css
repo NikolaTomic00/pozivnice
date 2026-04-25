@@ -280,7 +280,6 @@ nav button {
 }
 
 .testimonial {
-  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1365,6 +1364,9 @@ footer {
     width: 200px;
     font-size: 1rem;
   }
+  .faq-item:hover {
+    border: none;
+  }
   .contact-cta {
     padding-top: 16px;
   }
@@ -1373,7 +1375,9 @@ footer {
     text-align: center;
     gap: 2rem;
   }
-
+  .permalinks {
+    font-size: 1rem;
+  }
   .footer3 div {
     justify-content: center;
   }
