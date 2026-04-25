@@ -843,9 +843,17 @@ footer {
 .footer-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 7rem;
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
+
+  align-items: center;
+  justify-content: center;
+}
+.footer1,
+.footer2,
+.footer3 {
+  text-align: center;
 }
 .footer-container h4 {
   padding-bottom: 1rem;
@@ -867,12 +875,14 @@ footer {
 
 /* LINKS */
 .footer2 ul {
+  text-align: center;
   list-style: none;
   padding: 0;
 }
 
 .footer2 li {
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .footer2 a {
