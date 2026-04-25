@@ -1370,12 +1370,11 @@ footer {
     width: 200px;
     font-size: 1rem;
   }
-  .faq-item:hover {
-    border: none;
-  }
+
   .contact-cta {
     padding-top: 16px;
   }
+
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
