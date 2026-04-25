@@ -93,16 +93,6 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
-.btn {
-  display: inline-block;
-  background: var(--text-light);
-  color: black;
-  padding: 1rem 2rem;
-  border: 1px solid transparent;
-  font-weight: 500;
-  transition: var(--transaction);
-}
-
 nav {
   background-color: transparent;
   width: 100vw;
@@ -173,8 +163,8 @@ nav button {
 }
 
 .btn {
-  background: var(--primary-color);
-  color: #000;
+  background: var(--primary-dark);
+  color: var(--text-light);
   border: none;
   border-radius: var(--border-radius);
   padding: 15px 20px;
@@ -188,7 +178,7 @@ nav button {
   text-align: center;
 }
 .btn:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--primary-color);
   transform: translateY(-3px);
 }
 
@@ -660,17 +650,187 @@ nav button {
 }
 .preview {
   display: flex;
-  flex-direction: column; /* slika pa dugme */
-  justify-content: center; /* vertikalno centriranje */
-  align-items: center; /* horizontalno centriranje */
-  min-height: 100vh; /* 👈 centar ekrana */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-top: 0px;
+  padding-top: 1rem;
+  border-bottom: var(--border-grey);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .preview-image img {
-  width: 600px;
+  width: 400px;
+}
+.faq {
+  background-color: var(--backgrouind-secendory-color);
+  padding-top: 0px;
+}
+.faq-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
 }
 
+.faq-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.faq-header p {
+  font-size: 0.8rem;
+}
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid var(--border-accent);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent-light);
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.header p {
+  color: var(--text-light);
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.faq-item {
+  background-color: var(--background-primary-color);
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: 1px solid #3b82f6;
+  border: 1px solid #3b82f6;
+  box-shadow:
+    0 0 8px rgba(59, 130, 246, 0.4),
+    0 0 16px rgba(59, 130, 246, 0.2);
+}
+
+.faq-item.active {
+  border: 1px solid #3b82f6;
+  box-shadow:
+    0 0 8px rgba(59, 130, 246, 0.4),
+    0 0 16px rgba(59, 130, 246, 0.2);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.icon {
+  color: var(--text-light);
+  font-size: 14px;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.faq-item.active .icon {
+  color: orange;
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer-content {
+  overflow: hidden;
+}
+
+.faq-answer-content p {
+  padding: 0 24px 16px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.faq-answer-content ul {
+  margin: 0 0 16px;
+  padding-left: 44px;
+  padding-right: 24px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.faq-answer-content li {
+  margin-bottom: 6px;
+}
+
+.contact-cta {
+  margin-top: 50px;
+  padding: 40px;
+  background: var(--background-primary-color);
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.cta-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.contact-cta h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-light);
+}
+
+.contact-cta p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--primary-dark);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background 0.2s ease;
+}
+
+.cta-btn:hover {
+  background: var(--primary-color);
+}
 /* tablets media querier ----------------------------------------------------- */
 
 @media screen and (max-width: 1024px) {
@@ -704,7 +864,7 @@ nav button {
     cursor: pointer;
   }
   .header__container {
-    grid-template-columns: 1fr; /* PRELAZI U COLUMN */
+    grid-template-columns: 1fr;
     text-align: center;
     gap: 2rem;
     padding: 2rem;
@@ -758,7 +918,9 @@ nav button {
   .nav__menu li:nth-child(4) {
     animation-delay: 600ms;
   }
-
+  .nav__menu li:nth-child(5) {
+    animation-delay: 800ms;
+  }
   @keyframes animateNavItems {
     from {
       transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
@@ -782,7 +944,7 @@ nav button {
   }
   .btn-container {
     display: flex;
-    justify-content: center; /* centriranje horizontalno */
+    justify-content: center;
     align-items: center;
     gap: 50px;
   }
@@ -799,23 +961,23 @@ nav button {
     justify-content: center;
     align-items: center;
     border-top: 1px solid rgba(156, 163, 175, 0.25);
-    padding: 0 2rem 2rem;
+    padding: 0 2rem 24px;
   }
 
   .price-info {
     text-align: center;
-    padding: 1rem 2rem 2rem;
+    padding: 1rem;
   }
   .price-info h1 {
     font-size: 2.7rem;
-    padding-bottom: 8px;
+    padding-bottom: 0px;
     background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .price-info p {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .wrapper {
@@ -1106,10 +1268,13 @@ nav button {
     text-align: center;
     padding-top: 0px;
     min-height: auto;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
   .btn-models {
     width: 200px;
     font-size: 1rem;
+  }
+  .contact-cta {
+    padding-top: 16px;
   }
 }

@@ -3,7 +3,7 @@
 window.addEventListener("scroll", () => {
   document
     .querySelector("nav")
-    .classList.toggle("window-scroll", window.scrollY > 100);
+    .classList.toggle("window-scroll", window.scrollY > 80);
 });
 
 const menu = document.querySelector(".nav__menu");
@@ -47,4 +47,18 @@ const swiper = new Swiper(".testimonial__swiper", {
       slidesPerView: 3,
     },
   },
+});
+
+const items = document.querySelectorAll(".faq-item");
+
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    const isActive = item.classList.contains("active");
+
+    items.forEach((i) => i.classList.remove("active"));
+
+    if (!isActive) {
+      item.classList.add("active");
+    }
+  });
 });
