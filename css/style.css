@@ -1070,7 +1070,7 @@ footer {
     width: 335px;
     background: var(--background-primary-color);
     border-radius: 16px;
-    padding: 30px;
+    padding: 30px 30px 0px;
     border: 1px solid rgba(156, 163, 175, 0.25);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
   }
@@ -1176,10 +1176,10 @@ footer {
     font-family: "Poppins", sans-serif;
   }
   .price-details .price::before {
-    content: "$";
-    left: -13px;
-    top: 17px;
-    font-size: 20px;
+    content: "€";
+    left: -20px;
+    top: 20px;
+    font-size: 22px;
     background: linear-gradient(#a78bfa 0%, #77a5f8 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -1202,6 +1202,11 @@ footer {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .features li.disabled i {
+    color: #f87171;
+    -webkit-text-fill-color: #f87171;
+    background: none;
   }
   .features li span {
     margin-left: 10px;
