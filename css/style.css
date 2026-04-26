@@ -902,7 +902,9 @@ footer {
   gap: 0.5rem;
   margin-bottom: 0.7rem;
 }
-
+.permalinks {
+  font-weight: bold;
+}
 .footer3 i {
   color: #a78bfa;
 }
@@ -1382,6 +1384,7 @@ footer {
   }
   .permalinks {
     font-size: 1rem;
+    font-weight: bold;
   }
   .footer3 div {
     justify-content: center;
