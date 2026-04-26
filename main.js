@@ -62,3 +62,13 @@ items.forEach((item) => {
     }
   });
 });
+
+const navLinks = document.querySelectorAll(".nav__menu a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menu.style.display = "none";
+    closedBtn.style.display = "none";
+    menuBtn.style.display = "inline-block";
+  });
+});

@@ -668,4 +668,7 @@ button:hover {
   .form-container {
     margin: 0 1.5rem;
   }
+  .form-sections {
+    padding-top: 2rem;
+  }
 }
