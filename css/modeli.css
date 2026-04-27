@@ -151,12 +151,11 @@ nav button {
   height: auto;
 }
 .model-content {
-  padding: 2rem 2rem 1rem;
+  padding: 2rem;
   text-align: center;
 }
 .model-content h3 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
 }
 .model-content .model-btn {
   display: inline-block;
@@ -290,7 +289,7 @@ nav button {
     color: var(--text-light);
   }
   .model-container {
-    padding: 0 32px 32px;
+    padding: 0 16px 32px;
   }
   .description {
     padding-top: 64px;
