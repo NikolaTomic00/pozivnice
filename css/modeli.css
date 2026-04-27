@@ -134,14 +134,15 @@ nav button {
   width: 325px;
   background-color: var(--background-primary-color);
   border-radius: 8px;
-  border: 1px solid #3b82f6;
-  box-shadow:
-    0 0 8px rgba(59, 130, 246, 0.4),
-    0 0 16px rgba(59, 130, 246, 0.2);
+  border: var(--border-grey);
   overflow: hidden;
   margin-bottom: 20px;
 }
 .model:hover {
+  border: 1px solid #3b82f6;
+  box-shadow:
+    0 0 8px rgba(59, 130, 246, 0.4),
+    0 0 16px rgba(59, 130, 246, 0.2);
   cursor: pointer;
   transform: translateY(-3px);
 }
