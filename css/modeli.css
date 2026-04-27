@@ -177,7 +177,7 @@ nav button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 1.5rem;
-  padding-top: 100px;
+  padding-top: 64px;
 }
 
 @media screen and (max-width: 1024px) {
